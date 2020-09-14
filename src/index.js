@@ -4,9 +4,13 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+import TaskProvider from './providers/TaskProvider';
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <TaskProvider>
+      <App />
+    </TaskProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
